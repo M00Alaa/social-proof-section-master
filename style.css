@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --Very-dark-magenta: hsl(300, 43%, 22%);
+    --Soft-pink: hsl(333, 80%, 67%);
+
+    --Dark-grayish-magenta: hsl(303, 10%, 53%);
+    --Light-grayish-magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.bg-image {
+    position: relative;
+    inset: 0;
+}
+
+.bg-image .top-image {
+    position: fixed;
+    top: -15px;
+    left: 0;
+}
+
+.bg-image .bottom-image {
+    position: fixed;
+    bottom: -185px;
+    right: 0;
+}
+
+.container {
+    padding: 103px 163px;
+    padding-right: 81px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.row:first-child {
+    display: flex;
+    margin-bottom: 54px;
+}
+
+.row:first-child .left-side {
+    width: 45%;
+    padding-right: 1rem;
+}
+
+.row:first-child .left-side h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    line-height: 1;
+
+    margin-bottom: 1rem;
+
+    color: var(--Very-dark-magenta);
+}
+
+.row:first-child .left-side p {
+    color: var(--Dark-grayish-magenta);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.row:first-child .right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.row:first-child .right-side>div {
+    background-color: var(--Light-grayish-magenta);
+    border-radius: 0.6rem;
+    padding: 1rem 1.9rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+    width: 86%;
+}
+
+.row:first-child .right-side>div .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.stars svg {
+    margin-right: 6px;
+}
+
+.row:first-child .right-side>div .col p {
+    color: var(--Very-dark-magenta);
+    font-weight: bolder;
+
+    margin-left: 2rem;
+}
+
+.row:first-child .right-side .first-col {
+    align-self: flex-start;
+}
+
+.row:first-child .right-side .sec-col {
+    align-self: center;
+}
+
+.row:first-child .right-side .third-col {
+    align-self: flex-end;
+}
+
+/* -------------------------------------------------- */
+
+.row:last-child {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 2.5rem;
+    height: 260px;
+}
+
+.row:last-child .first-card {
+    align-self: flex-start;
+}
+
+.row:last-child .sec-card {
+    align-self: center;
+}
+
+.row:last-child .third-card {
+    align-self: flex-end;
+}
+
+.row:last-child>div {
+    background-color: var(--Very-dark-magenta);
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+
+    padding: 2.8rem 2rem;
+    width: calc(95% / 3);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    height: 220px;
+}
+
+.row:last-child>div .card-head {
+    display: flex;
+    align-items: center;
+
+    height: 25%;
+}
+
+.row:last-child>div .card-head img {
+    width: 18%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.row:last-child>div .card-head .head-details {}
+
+.row:last-child>div .card-head .head-details h2 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.row:last-child>div .card-head .head-details p {
+    color: var(--Soft-pink);
+}
+
+.row:last-child>div .card-body {
+    height: 55%;
+}
+
+.row:last-child>div .card-body p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
